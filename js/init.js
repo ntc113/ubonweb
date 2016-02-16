@@ -28,7 +28,7 @@
           }
           if (ready) {
             bootReady.boot = false;
-            angular.bootstrap(document, ['myApp']);
+            angular.bootstrap(document, ['ubon']);
           }
         };
 
@@ -62,7 +62,6 @@
       }
     }
     bootReady.i18n_ng = Config.I18n.locale == defaultLocale; // Already included
-
     $.getJSON('js/locales/' + Config.I18n.locale + '.json').success(function (json) {
       Config.I18n.messages = json;
       bootReady.i18n_messages = true;

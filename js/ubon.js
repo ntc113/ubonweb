@@ -3,7 +3,9 @@
 // Declare app
 angular.module('ubon', [
   'ngRoute',
-  'ubon.controller'
+  'ubon.filters',
+  'ubon.controller',
+  'ubon.directives'
 ]).
 config(function($locationProvider, $routeProvider) {
 

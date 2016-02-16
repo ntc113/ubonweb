@@ -1,0 +1,15 @@
+.header {
+	height: $headerHeight;
+	.navbar-inverse {
+		background-color: $ubonColor;
+		border: 0;
+		.head_logo {
+			color: #fff;
+			height: 50px;
+			line-height: 50px;
+			background-position: 4px 0;
+			@extend %welcome_img;
+		}
+	}
+	
+}
