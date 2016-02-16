@@ -10,6 +10,7 @@
 	"welcome_feature_secure_message":"UBon has no limit on size of the chat and media. ",
 	"welcome_feature_connect_title": "Connect",
 	"welcome_feature_connect_message":"Find your friends around you via wifi, Facebook, location and phone numbers.",
+	"required_phoneapp_message" : "Please ensure you have BChat account on mobile and it is setted password.",
 
 	"modal_search": "Search",
 	"modal_close": "Close",

@@ -1,35 +1,88 @@
-/*
-Sass::SyntaxError: ".header .navbar-inverse .head_logo" failed to @extend "%welcome_img".
-The selector "%welcome_img" was not found.
-Use "@extend %welcome_img !optional" if the extend should be able to fail.
+.header .navbar-inverse .navbar-header .navbar-brand .head_logo, #welcome .home_top .home_logo, #welcome .home_top .btn-start, #welcome .home_bottom .feature-img {
+  background-image: url("../img/img_welcome.png");
+  background-repeat: no-repeat; }
 
+.page_wrap {
+  background: url("../img/bg-main.png"); }
 
-Backtrace:
-scss/_header.scss:11
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/extend.rb:62:in `block in check_extends_fired!'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/util/subset_map.rb:105:in `block in each_value'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/util/subset_map.rb:105:in `each'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/util/subset_map.rb:105:in `each_value'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/extend.rb:51:in `check_extends_fired!'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/extend.rb:16:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:39:in `css_tree'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:471:in `on_file_changed'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:328:in `block in watch'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:252:in `call'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Sass::SyntaxError: \".header .navbar-inverse .head_logo\" failed to @extend \"%welcome_img\".\A The selector \"%welcome_img\" was not found.\A Use \"@extend %welcome_img !optional\" if the extend should be able to fail.\A "; }
+.btn {
+  border: 0 none;
+  padding: 7px 13px; }
+
+.modal.confirm_modal_window .modal-dialog {
+  max-width: 310px; }
+  .modal.confirm_modal_window .modal-dialog .modal-footer {
+    padding: 0; }
+    .modal.confirm_modal_window .modal-dialog .modal-footer .btn {
+      width: 50%;
+      float: left;
+      text-decoration: none;
+      margin: 0; }
+      .modal.confirm_modal_window .modal-dialog .modal-footer .btn:hover {
+        font-weight: bold; }
+    .modal.confirm_modal_window .modal-dialog .modal-footer .btn-link:hover {
+      border-radius: 5px;
+      background: #f2f6fa; }
+.modal .modal-content {
+  border: 0 none;
+  border-radius: 5px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15); }
+
+.header {
+  height: 46px; }
+  .header .navbar-inverse {
+    background-color: #3282da;
+    border: 0; }
+    .header .navbar-inverse .navbar-header .navbar-brand {
+      color: #fff;
+      line-height: 45px;
+      padding: 4px 20px; }
+      .header .navbar-inverse .navbar-header .navbar-brand .head_logo {
+        height: 40px;
+        width: 40px;
+        float: left; }
+    .header .navbar-inverse .navbar-menu a {
+      color: #fff; }
+
+#welcome .home_top {
+  border-bottom: 1px solid #c4beb6;
+  height: 400px;
+  margin-bottom: 30px; }
+  #welcome .home_top .home_logo {
+    background-position: 0 -50px;
+    display: inline-block;
+    height: 180px;
+    margin-top: 30px;
+    width: 134px; }
+  #welcome .home_top .btn-start {
+    background-position: -40px 0;
+    color: #fff;
+    font-size: 120%;
+    height: 49px;
+    line-height: 35px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    width: 220px; }
+    #welcome .home_top .btn-start:hover, #welcome .home_top .btn-start:active {
+      font-weight: bold; }
+#welcome .home_bottom .feature-img {
+  float: left;
+  height: 85px;
+  margin-bottom: 40px;
+  margin-right: 25px;
+  width: 85px; }
+#welcome .home_bottom #fast {
+  background-position: 0 -231px; }
+#welcome .home_bottom #secure {
+  background-position: 0 -324px; }
+#welcome .home_bottom #powerfull {
+  background-position: -90px -231px; }
+#welcome .home_bottom #connect {
+  background-position: -90px -324px; }
+#welcome .home_bottom .title {
+  color: #5e5e5e;
+  font-size: 200%;
+  line-height: 1.5;
+  display: block; }
+
+/*# sourceMappingURL=ubon.css.map */

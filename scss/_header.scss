@@ -3,13 +3,23 @@
 	.navbar-inverse {
 		background-color: $ubonColor;
 		border: 0;
-		.head_logo {
-			color: #fff;
-			height: 50px;
-			line-height: 50px;
-			background-position: 4px 0;
-			@extend %welcome_img;
+		.navbar-header {
+			.navbar-brand {
+				color: #fff;
+			    line-height: 45px;
+			    padding: 4px 20px;
+				.head_logo {
+					height: 40px;
+					width: 40px;
+					float: left;
+					@extend %welcome_img;
+				}
+			}
+		}	
+		.navbar-menu {
+			a {
+				color: #fff;
+			}
 		}
 	}
-	
 }

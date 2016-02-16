@@ -1,0 +1,33 @@
+.modal {
+	&.confirm_modal_window {
+		.modal-dialog {
+			max-width: 310px;
+			.modal-close-button {
+
+		    }
+		    .modal-body {}
+		    .modal-footer {
+		    	padding: 0;
+		    	.btn {
+		    		width: 50%;
+		    		float: left;
+		    		text-decoration: none;
+		    		margin: 0;
+		    		&:hover {
+		    			font-weight: bold;
+		    		}
+		    	}
+		    	.btn-link:hover {
+		    		border-radius:5px;
+				  background: #f2f6fa;
+				}
+		    }
+		}
+	}
+	.modal-content {
+	    border: 0 none;
+	    border-radius: 5px;
+	    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+
+	}
+}

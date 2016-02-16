@@ -8,6 +8,10 @@ function templateUrl (tplName) {
   return 'templates/' + tplName + '.html';
 }
 
+function onContentLoaded (cb) {
+  setTimeout(cb, 0);
+};
+
 function encodeEntities(value) {
   return value.
     replace(/&/g, '&amp;').
