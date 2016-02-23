@@ -1,0 +1,34 @@
+
+.login_form_wrap {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    margin: 200px auto 0;
+    max-width: 310px;
+    overflow: hidden;
+    padding: 25px;
+    .login_form_head {
+    	text-transform: uppercase;
+    }
+    .login_form_lead, .login_form_head {
+    	text-align: center;
+    }
+}
+.login_country_selector, .login_phone_number, .login_country_selector:focus, .login_phone_number:focus {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1.5px solid #ccc;
+    border-radius: 0;
+    box-shadow: none;
+}
+.login_country_selector {
+    cursor: pointer;
+    height: 34px;
+    line-height: 14px;
+    margin-bottom: 12px;
+    padding: 10px 12px 10px 13px;
+}
+.login_country_selector, .login_form_head {
+    text-transform: uppercase;
+}

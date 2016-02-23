@@ -1,7 +1,7 @@
 /*!
- * Webogram v0.3.6 - messaging web application for MTProto
+ * UBon web
  * #
- * Copyright (C) 2014 Igor Zhukov <igor.beatle@gmail.com>
+ * Copyright (C) 2016 DuyNT <duynt@catcom.vn>
  * #/blob/master/LICENSE
  */
 
